@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>user type:Admin</h3>
+
+    <form  method="post">
+      {% csrf_token %}
+      {{create_branch.as_p}}
+      <input type="submit" name="" value="Create Branch" onclick="sendAlert()">
+
+    </form>
+<script type="text/javascript">
+
+  var sendAlert=function(){
+    alert("branch added successfully!")
+
+
+  };
+
+</script>
+
+
+
+  </body>
+</html>
